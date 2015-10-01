@@ -22,13 +22,13 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup1;
     RadioButton radioJelly, radioKitkat, radioLollipop;
     Button btn1, btn2;
-    ImageView imgPet;
+    ImageView imgAndroid;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setTitle("애완동물 사진 보기");
+        setTitle("안드로이드 사진 보기");
 
         text1 = (TextView)findViewById(R.id.Text1);
         switch1 = (Switch)findViewById(R.id.Switch1);
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
 
         btn1 = (Button)findViewById(R.id.Btn1);
         btn2 = (Button)findViewById(R.id.Btn2);
-        imgPet = (ImageView)findViewById(R.id.ImgPet);
+        imgAndroid = (ImageView)findViewById(R.id.ImgAndroid);
 
         switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -51,14 +51,14 @@ public class MainActivity extends AppCompatActivity {
                     radioGroup1.setVisibility(View.VISIBLE);
                     btn1.setVisibility(View.VISIBLE);
                     btn2.setVisibility(View.VISIBLE);
-                    imgPet.setVisibility(View.VISIBLE);
+                    imgAndroid.setVisibility(View.VISIBLE);
                 }
                 else{
                     text2.setVisibility(View.INVISIBLE);
                     radioGroup1.setVisibility(View.INVISIBLE);
                     btn1.setVisibility(View.INVISIBLE);
                     btn2.setVisibility(View.INVISIBLE);
-                    imgPet.setVisibility(View.INVISIBLE);
+                    imgAndroid.setVisibility(View.INVISIBLE);
                 }
             }
         });
@@ -68,13 +68,13 @@ public class MainActivity extends AppCompatActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (radioGroup1.getCheckedRadioButtonId()){
                     case R.id.RadioJelly:
-                        imgPet.setImageResource(R.drawable.jelly);
+                        imgAndroid.setImageResource(R.drawable.jelly);
                         break;
                     case R.id.RadioKitkat:
-                        imgPet.setImageResource(R.drawable.kitkat);
+                        imgAndroid.setImageResource(R.drawable.kitkat);
                         break;
                     case R.id.RadioLollipop:
-                        imgPet.setImageResource(R.drawable.lollipop);
+                        imgAndroid.setImageResource(R.drawable.lollipop);
                         break;
                     default:
                         Toast.makeText(getApplicationContext(),"선택해주세요.",Toast.LENGTH_SHORT).show();
@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
                 radioGroup1.setVisibility(View.INVISIBLE);
                 btn1.setVisibility(View.INVISIBLE);
                 btn2.setVisibility(View.INVISIBLE);
-                imgPet.setVisibility(View.INVISIBLE);
+                imgAndroid.setVisibility(View.INVISIBLE);
             }
         });
     }
