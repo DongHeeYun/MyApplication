@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MyApplication</string>
+    <string name="textView1">선택을 시작하겠습니까?</string>
+    <string name="checkBox1">시작함</string>
+    <string name="radio1">젤리빈(4.3)</string>
+    <string name="radio2">킷켓(4.4)</string>
+    <string name="radio3">롤리팝(5.0)</string>
+    <string name="btn1">종료</string>
+    <string name="btn2">처음으로</string>
+    <string name="switch1">시작함</string>
+</resources>
