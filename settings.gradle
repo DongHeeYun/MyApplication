@@ -1,1 +1,1 @@
-include ':app', ':Button', ':calc', ':ImageButton', ':image', ':image', ':image', ':calc2', ':web'
+include ':app', ':Button', ':calc', ':ImageButton', ':image', ':image', ':image', ':calc2', ':web', ':webview'
